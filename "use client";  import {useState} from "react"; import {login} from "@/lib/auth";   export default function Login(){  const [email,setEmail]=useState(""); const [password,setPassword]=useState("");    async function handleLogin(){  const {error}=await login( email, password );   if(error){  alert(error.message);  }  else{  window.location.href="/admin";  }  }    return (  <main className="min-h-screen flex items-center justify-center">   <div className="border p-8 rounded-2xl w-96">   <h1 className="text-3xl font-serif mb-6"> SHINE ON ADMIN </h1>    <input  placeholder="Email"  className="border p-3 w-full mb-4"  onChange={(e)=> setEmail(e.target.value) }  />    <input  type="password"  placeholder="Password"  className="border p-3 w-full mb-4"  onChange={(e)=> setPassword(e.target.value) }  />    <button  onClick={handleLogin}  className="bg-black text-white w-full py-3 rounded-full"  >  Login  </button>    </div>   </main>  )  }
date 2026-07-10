@@ -1,0 +1,103 @@
+"use client";
+
+import {useState} from "react";
+import {login} from "@/lib/auth";
+
+
+export default function Login(){
+
+const [email,setEmail]=useState("");
+const [password,setPassword]=useState("");
+
+
+
+async function handleLogin(){
+
+const {error}=await login(
+email,
+password
+);
+
+
+if(error){
+
+alert(error.message);
+
+}
+
+else{
+
+window.location.href="/admin";
+
+}
+
+}
+
+
+
+return (
+
+<main className="min-h-screen flex items-center justify-center">
+
+
+<div className="border p-8 rounded-2xl w-96">
+
+
+<h1 className="text-3xl font-serif mb-6">
+SHINE ON ADMIN
+</h1>
+
+
+
+<input
+
+placeholder="Email"
+
+className="border p-3 w-full mb-4"
+
+onChange={(e)=>
+setEmail(e.target.value)
+}
+
+/>
+
+
+
+<input
+
+type="password"
+
+placeholder="Password"
+
+className="border p-3 w-full mb-4"
+
+onChange={(e)=>
+setPassword(e.target.value)
+}
+
+/>
+
+
+
+<button
+
+onClick={handleLogin}
+
+className="bg-black text-white w-full py-3 rounded-full"
+
+>
+
+Login
+
+</button>
+
+
+
+</div>
+
+
+</main>
+
+)
+
+}
