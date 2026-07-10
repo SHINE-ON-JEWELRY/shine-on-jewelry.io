@@ -1,0 +1,49 @@
+💎 SHINE ON JEWELRY
+
+Welcome to the official repository for SHINE ON JEWELRY.
+
+An elegant online jewelry store built to provide customers with a seamless shopping experience for beautiful earrings and accessories.
+
+✨ Features
+
+* 🏠 Modern Homepage
+* 💎 Featured Earrings Collection
+* 🔍 Product Search & Categories
+* 🛒 Shopping Cart
+* 💳 Secure Checkout
+* 👤 Customer Accounts
+* ❤️ Wishlist
+* 📦 Order Tracking
+* 📱 Fully Responsive Design
+* ⚙️ Admin Dashboard
+* 📊 Sales & Inventory Management
+
+🛠️ Tech Stack
+
+* Frontend: HTML, CSS, JavaScript
+* Backend: Node.js & Express
+* Database: MongoDB
+* Authentication: JWT
+* Payment: Stripe / ABA KHQR (Coming Soon)
+
+🚀 Project Status
+
+🚧 Currently under active development.
+
+📂 Project Structure
+
+/
+├── frontend/
+├── backend/
+├── admin/
+├── public/
+├── database/
+└── README.md
+
+🎯 Mission
+
+Our mission is to offer stylish, affordable, and high-quality jewelry with a smooth online shopping experience.
+
+⸻
+
+Made with ❤️ by SHINE ON JEWELRY.
