@@ -1,0 +1,110 @@
+const products = [
+  {
+    name: "Diamond Pearl Earrings",
+    price: "$29.99",
+    image: "/products/earring1.jpg",
+  },
+  {
+    name: "Golden Blossom Earrings",
+    price: "$19.99",
+    image: "/products/earring2.jpg",
+  },
+  {
+    name: "Luxury Crystal Earrings",
+    price: "$39.99",
+    image: "/products/earring3.jpg",
+  },
+  {
+    name: "Elegant Heart Earrings",
+    price: "$24.99",
+    image: "/products/earring4.jpg",
+  },
+];
+
+export default function Home() {
+  return (
+    <main className="bg-white text-gray-900">
+
+      {/* Hero Section */}
+      <section className="min-h-[80vh] flex items-center justify-center bg-gradient-to-b from-yellow-50 to-white px-6">
+        <div className="text-center max-w-3xl">
+
+          <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6">
+            SHINE ON JEWELRY
+          </h1>
+
+          <p className="text-lg text-gray-600 mb-8">
+            Elegant jewelry designed to make every moment shine.
+            Discover our beautiful collection of earrings and accessories.
+          </p>
+
+          <button className="bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800">
+            Shop Collection
+          </button>
+
+        </div>
+      </section>
+
+
+      {/* Featured Products */}
+      <section className="px-6 py-16">
+
+        <h2 className="text-3xl font-serif font-bold text-center mb-10">
+          Featured Earrings
+        </h2>
+
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          {products.map((product) => (
+            <div
+              key={product.name}
+              className="border rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition"
+            >
+
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-72 object-cover"
+              />
+
+              <div className="p-5">
+
+                <h3 className="font-semibold text-lg">
+                  {product.name}
+                </h3>
+
+                <p className="text-yellow-700 font-bold mt-2">
+                  {product.price}
+                </p>
+
+                <button className="mt-4 w-full border border-black py-2 rounded-full hover:bg-black hover:text-white transition">
+                  Add to Cart
+                </button>
+
+              </div>
+
+            </div>
+          ))}
+
+        </div>
+
+      </section>
+
+
+      {/* Brand Section */}
+      <section className="bg-black text-white py-16 px-6 text-center">
+
+        <h2 className="text-3xl font-serif mb-4">
+          Shine With Confidence ✨
+        </h2>
+
+        <p className="text-gray-300 max-w-xl mx-auto">
+          Premium designs, elegant details, and timeless beauty for every occasion.
+        </p>
+
+      </section>
+
+    </main>
+  );
+}
