@@ -1,0 +1,24 @@
+async function addProduct(){
+
+
+await supabase
+.from("products")
+.insert({
+
+name:product.name,
+
+price:Number(product.price),
+
+material:product.material,
+
+stock:Number(product.stock)
+
+});
+
+
+alert(
+"Product Added 💎"
+);
+
+
+}
