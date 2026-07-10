@@ -1,0 +1,29 @@
+async function addProduct(){
+
+const imageUrl =
+await uploadImage(imageFile);
+
+
+
+await supabase
+.from("products")
+.insert({
+
+name:product.name,
+
+price:Number(product.price),
+
+material:product.material,
+
+stock:Number(product.stock),
+
+image:imageUrl
+
+});
+
+
+alert(
+"Product Added 💎"
+);
+
+}
