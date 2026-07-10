@@ -1,0 +1,17 @@
+create table orders (
+
+id bigint generated always as identity primary key,
+
+customer_name text,
+
+phone text,
+
+address text,
+
+items jsonb,
+
+total numeric,
+
+created_at timestamp default now()
+
+);
