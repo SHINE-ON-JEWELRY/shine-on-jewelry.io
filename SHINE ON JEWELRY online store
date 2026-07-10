@@ -1,0 +1,29 @@
+shine-on-jewelry.io/
+│
+├── frontend/
+│   ├── Home page
+│   ├── Product catalog
+│   ├── Product detail
+│   ├── Shopping cart
+│   ├── Checkout
+│   └── Customer account
+│
+├── admin/
+│   ├── Dashboard
+│   ├── Add/Edit products
+│   ├── Manage inventory
+│   ├── Manage orders
+│   └── Customer management
+│
+├── backend/
+│   ├── API
+│   ├── Database
+│   ├── Authentication
+│   └── Payment system
+│
+├── public/
+│   ├── Jewelry images
+│   ├── Logo
+│   └── Assets
+│
+└── README.md
